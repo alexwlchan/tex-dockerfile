@@ -52,7 +52,7 @@ To build documents with this image, use the new image name in the `docker run` c
 ```
 docker run \
   --volume $(pwd):/data \
-  alexwlchan/texlive \
+  alexwlchan/texlive-with-lastpage \
   xelatex example.tex
 ```
 
