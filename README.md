@@ -11,11 +11,15 @@ I run LaTeX in a Docker container so:
 
 *   I can easily run LaTeX on a Linux server, which means I can compile LaTeX documents on my iPad over SSH.
 
+The idea is that the base container should be pretty small, so it builds quickly, and then I add packages as needed with `tlmgr`.
+
 ## Usage
 
-Build a Docker image from the Dockerfile in this repo:
+Clone this repo, then build a Docker image from the Dockerfile:
 
 ```
+git clone https://github.com/alexwlchan/tex-dockerfile.git
+cd tex-dockerfile
 docker build --tag alexwlchan/texlive .
 ```
 
